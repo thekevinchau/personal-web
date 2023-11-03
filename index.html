@@ -4,6 +4,9 @@
     <head>
         <meta charset = "utf-8">
         <title>Hello!</title>
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
         <link rel="stylesheet" href="index.css">
         <script src="index.js" defer></script>
     </head>
@@ -14,7 +17,7 @@
                 <div class="navbar">
                     <div>
                         <a class="nav-links" href="#about">//about</a>
-                        <a class="nav-links" href="">//projects</a>
+                        <a class="nav-links" href="#projects">//projects</a>
                         <a class="nav-links" href="#skills">//skills</a>
                         <a class="nav-links" href="">//contact</a>
                     </div>
@@ -36,22 +39,22 @@
                         </div>
                 </div>
                 <div class="about-me" id="about">
-                    <h2 style="font-family: Arial;margin-left: 40px; margin-top: 150px;color: white;">#  About Me</h2>
-                    <p style="font-family: Arial, Helvetica, sans-serif; color: white; font-size:larger">My name is Kevin Chau and I’m a student currently studying Computer Science and Cybersecurity at the University of Delaware. Whether it's programming, game dev, or web design — if it requires a computer and some creative thinking I’m interested!</p>
-                    <p style="font-family: Arial, Helvetica, sans-serif; color: white; font-size:larger">I have a deep passion for programming and I like solving problems. 
+                    <h2 style="margin-left: 40px; margin-top: 150px;color: white;">#  About Me</h2>
+                    <p style="color: white; font-size:larger">My name is Kevin Chau and I’m a student currently studying Computer Science and Cybersecurity at the University of Delaware. Whether it's programming, game dev, or web design — if it requires a computer and some creative thinking I’m interested!</p>
+                    <p style="color: white; font-size:larger">I have a deep passion for programming and I like solving problems. 
                         I first started learning Python in my first semester of college. Today I’m studying web development and cybersecurity, which allows me to think about the integrated approach to the conception and development of 
                         secure software design. </p>
                     
-                    <p style="font-family: Arial, Helvetica, sans-serif; color: white; font-size:larger">At the University of Delaware, I am taking or have taken a number of
+                    <p style="color: white; font-size:larger">At the University of Delaware, I am taking or have taken a number of
                         higher-level computer science courses ranging from a variety of fields including Data Structures, Algorithms, Software Engineering, Automata Theory, and Machine Organization.
                     </p>
                     
-                    <p style="font-family: Arial, Helvetica, sans-serif; color: white; font-size:larger">Aside from school, some of my hobbies include playing basketball, weightlifting, 
+                    <p style="color: white; font-size:larger">Aside from school, some of my hobbies include playing basketball, weightlifting, 
                         and playing video games. I also play VALORANT for the University of Delaware.</p>
                 </div>
 
                 <div class="skills" id="skills">
-                    <h2 style="font-family: Arial;margin-left: 40px; margin-top: 100px;color: white;">#  Technical Skills</h2>
+                    <h2 style="margin-left: 40px; margin-top: 100px;color: white;">#  Technical Skills</h2>
 
                     <div class="skill-container">
 
@@ -93,13 +96,13 @@
                     </div>
                 </div>
 
-                <div class="project-container">
+                <div class="project-container" id="projects">
                     <h2 style="font-family: Arial;margin-left: 40px; margin-top: 100px;color: white;"># Personal Projects</h2>
                     
                     <div class="project-card">
                         <div class="project-name">
-                            <h2>Effortless: Redefining Athletic Wear</h2>
-                            <a style="margin-left: 25%"href="https://doomsuccs.github.io/Team-1/"><img class="icon" src="./imgs/external.png"></a>
+                            <h1>Effortless</h1>
+                            <a style="margin-left: 66%"href="https://doomsuccs.github.io/Team-1/"><img class="icon" src="./imgs/external.png"></a>
                             <a href="https://doomsuccs.github.io/Team-1/"><img class="icon"src="./imgs/github.png"></a>
                         </div>
 
@@ -109,12 +112,18 @@
                             and TypeScript. I handled the majority of the front-end development and much of the data handling.
                         </div>
 
+                        <div class="language-footer">
+                            <div class="language-tag">HTML</div>
+                            <div class="language-tag">CSS</div>
+                            <div class="language-tag">React</div>
+                        </div>
+
                     </div>
 
                     <div class="project-card">
                         <div class="project-name">
-                            <h2>Etch A Sketch</h2>
-                            <a style="margin-left: 63%"href="https://doomsuccs.github.io/Team-1/"><img class="icon" src="./imgs/external.png"></a>
+                            <h1>Etch A Sketch</h1>
+                            <a style="margin-left: 58%"href="https://doomsuccs.github.io/Team-1/"><img class="icon" src="./imgs/external.png"></a>
                             <a><img class="icon"src="./imgs/github.png"></a>
                         </div>
 
@@ -124,23 +133,38 @@
                             was used primarily to practice DOM Manipulation.
                         </div>
 
+                        <div class="language-footer">
+                            <div class="language-tag">HTML</div>
+                            <div class="language-tag">CSS</div>
+                            <div class="language-tag">JavaScript</div>
+                        </div>
+
                     </div>
 
                     <div class="project-card">
                         <div class="project-name">
-                            <h2>Personal Website</h2>
-                            <a style="margin-left: 58%"href="https://thekevinchau.github.io/calculator/"><img class="icon" src="./imgs/external.png"></a>
+                            <h1>Personal Website</h1>
+                            <a style="margin-left: 50%"href="https://thekevinchau.github.io/calculator/"><img class="icon" src="./imgs/external.png"></a>
                             <a href="https://github.com/thekevinchau/calculator"><img class="icon"src="./imgs/github.png"></a>
                         </div>
-
 
                         <div class="project-description">
                             You're looking at it right now! This is my first personal project that I've used all the HTML, CSS, and JavaScript that I've learned so far!
                             This is my first project regarding building a web-application. Eventually I will rebuild this app using DOM Manipulation and/or React.
                         </div>
+
+                        <div class="language-footer">
+                            <div class="language-tag">HTML</div>
+                            <div class="language-tag">CSS</div>
+                            <div class="language-tag">JavaScript</div>
+                        </div>
                     </div>
 
 
+                </div>
+
+                <div class="contact-me">
+                    <h2 style="font-family: Arial;margin-left: 40px; margin-top: 100px;color: white;"># Contact Me</h2>
                 </div>
 
             </div>
