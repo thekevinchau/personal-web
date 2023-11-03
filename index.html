@@ -5,9 +5,10 @@
         <meta charset = "utf-8">
         <title>Hello!</title>
         <link rel="stylesheet" href="index.css">
+        <script src="index.js" defer></script>
     </head>
     <body>
-        <div class="container">
+        <div class="container" id="blur">
             <div class="container-body">
                 
                 <div class="navbar">
@@ -31,7 +32,7 @@
                         </div>
                 </div>
                 <div class="about-me" id="about">
-                    <h2 style="font-family: Arial;margin-left: 40px; margin-top: 300px;color: white;">#  About</h2>
+                    <h2 style="font-family: Arial;margin-left: 40px; margin-top: 120px;color: white;">#  About Me</h2>
                     <p style="font-family: Arial, Helvetica, sans-serif; color: white; font-size:larger">My name is Kevin Chau and I’m a student currently studying Computer Science and Cybersecurity at the University of Delaware. Whether it's programming, game dev, or web design — if it requires a computer and some creative thinking I’m interested!</p>
                     <p style="font-family: Arial, Helvetica, sans-serif; color: white; font-size:larger">I have a deep passion for programming and I like solving problems. 
                         I first started learning Python in my first semester of college. Today I’m studying web development and cybersecurity, which allows me to think about the integrated approach to the conception and development of 
@@ -39,12 +40,94 @@
                     <p style="font-family: Arial, Helvetica, sans-serif; color: white; font-size:larger">Aside from school, some of my hobbies include playing basketball, weightlifting, 
                         and playing video games. I also play VALORANT for the University of Delaware.</p>
                 </div>
-                
-                <div class="projects" id="projects">
-                    <h2 style="font-family: Arial;margin-left: 40px; margin-top: 300px;color: white;">#  Project Timeline</h2>
-                </div>
 
+                <div class="skills" id="skills">
+                    <h2 style="font-family: Arial;margin-left: 40px; margin-top: 100px;color: white;">#  Technical Skills</h2>
+
+                    <div class="skill-container">
+
+                        <div class="skill" onclick="toggle('python')">
+                            <img src="./imgs/python-logo.png" class="skill-image">
+                            <div class="skill-desc"></div>
+                        </div>
+
+                        <div class="skill" onclick="toggle('java')">
+                            <img src="./imgs/javalogo.svg" class="skill-image">
+                            <div class="skill-desc"></div>
+                        </div>
+
+                        <div class="skill" onclick="toggle('c')">
+                            <img src="./imgs/C_Logo.png" class="skill-image">
+                            <div class="skill-desc"></div>
+                        </div>
+
+                        <div class="skill" onclick="toggle('cpp')">
+                            <img src="./imgs/c++.png" class="skill-image">
+                            <div class="skill-desc"></div>
+                        </div>
+
+                        <div class="skill" onclick="toggle('html')">
+                            <img src="./imgs/html5.png" class="skill-image">
+                            <div class="skill-desc"></div>
+                        </div>
+
+                        <div class="skill" onclick="toggle('css')">
+                            <img src="./imgs/css.png" class="skill-image">
+                            <div class="skill-desc"></div>
+                        </div>
+
+                        <div class="skill" onclick="toggle('javascript')">
+                            <img src="./imgs/JavaScript-logo.png" class="skill-image">
+                            <div class="skill-desc"></div>
+                        </div>
+                        
+                    </div>
+                </div>
             </div>
         </div>
     </body>
+    <div class="popup" id="python-pop">
+        <h1 style="background-color: white;">Python</h1>
+        <div style="background-color: white;">Python... my first programming language. I learned the basics of this language
+            through my first ever Computer Science course at the University of Delaware. Most recently I took a course on Algorithms where the class was
+            primarily Python-based.
+        </div>
+        <button>Click Here to Exit</button>
+    </div>
+
+    <div class="popup" id="java-pop">
+        <h2 style="background-color: white;">Java</h2>
+        <div style="background-color: white;">Hello</div>
+        <button>Click Here to Exit</button>
+    </div>
+
+    <div class="popup" id="c-pop">
+        <h2 style="background-color: white;">C</h2>
+        <div style="background-color: white;">Hello</div>
+        <button>Click Here to Exit</button>
+    </div>
+
+    <div class="popup" id="cpp-pop">
+        <h2 style="background-color: white;">C++</h2>
+        <div style="background-color: white;">Hello</div>
+        <button>Click Here to Exit</button>
+    </div>
+
+    <div class="popup" id="html-pop">
+        <h2 style="background-color: white;">HTML</h2>
+        <div style="background-color: white;">Hello</div>
+        <button>Click Here to Exit</button>
+    </div>
+
+    <div class="popup" id="css-pop">
+        <h2 style="background-color: white;">CSS</h2>
+        <div style="background-color: white;">Hello</div>
+        <button>Click Here to Exit</button>
+    </div>
+
+    <div class="popup" id="js-pop">
+        <h2 style="background-color: white;">JavaScript</h2>
+        <div style="background-color: white;">Hello</div>
+        <button>Click Here to Exit</button>
+    </div>
 </html>
