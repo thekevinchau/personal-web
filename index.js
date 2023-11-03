@@ -1,6 +1,6 @@
 function toggle(popName){
     let blur = document.querySelector('#blur')
-    blur.classList.toggle('active')
+    blur.classList.toggle('active');
 
     if (popName === "javascript"){
         let popup = document.querySelector('#js-pop')
