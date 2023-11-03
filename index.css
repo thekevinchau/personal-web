@@ -1,6 +1,9 @@
+*{
+    scroll-behavior: smooth;
+}
+
 body{
     background-color: rgb(30, 29, 29);
-    scroll-behavior: smooth;
 }
 h1{
     font-family: Arial;
@@ -189,8 +192,11 @@ p{
     background-color: gray;
     height: 216px;
     width: 696px;
-    border-radius: 5px;
+    border-radius: 10px;
     margin-bottom: 20px;
+}
+.project-card:hover{
+    transform: translate(-2.5%)
 }
 
 .project-name{
@@ -202,4 +208,13 @@ p{
     justify-content: space-between;
     color: white;
 
+}
+.icon{
+    height: 30px;
+    width: 30px;
+}
+
+.icon:hover{
+    opacity: 60%;
+    cursor: pointer;
 }
