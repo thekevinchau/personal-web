@@ -67,7 +67,6 @@ p{
     align-items: center;
     height: 100px;
     width: 100px;
-    border: 2px solid rgb(42, 148, 42);
     border-radius: 20px;
 }
 
@@ -88,6 +87,7 @@ p{
 }
 
 .popup{
+    color: white;
     height: 300px;
     width: 300px;
     position: fixed;
@@ -97,7 +97,7 @@ p{
     width: 600px;
     padding: 50px;
     box-shadow: 0 5px 30px rgba(0,0,0,.30);
-    background-color: #fff;
+    background-color: rgb(30, 29, 29);
     visibility: hidden;
     opacity: 0%;
     transition: 0.5s;
@@ -110,4 +110,7 @@ p{
     visibility: visible;
     opacity: 1;
     transition: 0.5s;
+}
+.popup-description{
+    font-family: Arial;
 }
