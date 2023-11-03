@@ -1,12 +1,10 @@
 *{
     scroll-behavior: smooth;
+    font-family: Arial;
 }
 
 body{
     background-color: rgb(30, 29, 29);
-}
-h1{
-    font-family: Arial;
 }
 p{
     color: white;
@@ -189,14 +187,14 @@ p{
     display: flex;
     flex-direction: column;
     margin-left: 40px;
-    background-color: gray;
+    background-color: rgb(66, 64, 64);
     height: 216px;
     width: 696px;
     border-radius: 10px;
     margin-bottom: 20px;
 }
 .project-card:hover{
-    transform: translate(-2.5%)
+    transform: translate(-2.5%);
 }
 
 .project-name{
@@ -207,8 +205,14 @@ p{
     align-items: center;
     justify-content: space-between;
     color: white;
-
 }
+
+.project-description{
+    margin-left: 20px;
+    color: white;
+    font-family: Arial;
+}
+
 .icon{
     height: 30px;
     width: 30px;
