@@ -1,243 +1,379 @@
 <!DOCTYPE html>
 
 <html>
-    <head>
-        <meta charset = "utf-8">
-        <title>Hello!</title>
-        <link rel="preconnect" href="https://fonts.googleapis.com">
-        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-        <link href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200&family=Roboto:ital,wght@1,300&display=swap" rel="stylesheet">
-        <link rel="stylesheet" href="index.css">
-        <script src="index.js" defer></script>
-    </head>
-    <body>
-        <div class="container" id="blur">
-            <div class="container-body">
-                
-                <div class="navbar">
-                    <div>
-                        <a class="nav-links" href="#about">//about</a>
-                        <a class="nav-links" href="#projects">//projects</a>
-                        <a class="nav-links" href="#skills">//skills</a>
-                        <a class="nav-links" href="">//contact</a>
-                    </div>
+  <head>
+    <meta charset="utf-8" />
+    <title>Hello!</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Fira+Sans:wght@100;200&family=Roboto:ital,wght@1,300&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="index.css" />
+    <script src="index.js" defer></script>
+    <script
+      type="text/javascript"
+      src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js"
+    ></script>
+    <script type="text/javascript">
+      (function () {
+        emailjs.init("uYEPkM7zJPXeFcyCr");
+      })();
+    </script>
+  </head>
+  <body>
+    <div class="container" id="blur">
+      <div class="container-body">
+        <div class="navbar">
+          <div>
+            <a class="nav-links" href="#about">//about</a>
+            <a class="nav-links" href="#projects">//projects</a>
+            <a class="nav-links" href="#skills">//skills</a>
+            <a class="nav-links" href="">//contact</a>
+          </div>
 
-                    <div>
-                        <a class="nav-links" href="https://github.com/thekevinchau">//GitHub</a>
-                        <a class="nav-links" href="https://www.linkedin.com/in/kevin-chau-1b2566291/">//LinkedIn</a>
-                    </div>
-                </div>
+          <div>
+            <a class="nav-links" href="https://github.com/thekevinchau"
+              >//GitHub</a
+            >
+            <a
+              class="nav-links"
+              href="https://www.linkedin.com/in/kevin-chau-1b2566291/"
+              >//LinkedIn</a
+            >
+          </div>
+        </div>
 
-                <div class="home-section">
-                        <div class="home-data">
-                            <h1>Hey there, I'm <span style="color: rgb(72, 200, 72);">Kevin Chau.</span></h1>
-                            <div class="arrow">
-                                <a href="#about"></a>
-                                <a href="#about"></a>
-                                <a href="#about"></a>
-                            </div>
-                        </div>
-                </div>
-                <div class="about-me" id="about">
-                    <h2 style="font-family: Arial;margin-left: 40px; margin-top: 150px;color: white;">#  About Me</h2>
-                    <p style="color: white; font-size:larger">My name is Kevin Chau and I’m a student currently studying Computer Science and Cybersecurity at the University of Delaware. Whether it's programming, game dev, or web design — if it requires a computer and some creative thinking I’m interested!</p>
-                    <p style="color: white; font-size:larger">I have a deep passion for programming and I like solving problems. 
-                        I first started learning Python in my first semester of college. Today I’m studying web development and cybersecurity, which allows me to think about the integrated approach to the conception and development of 
-                        secure software design. </p>
-                    
-                    <p style="color: white; font-size:larger">At the University of Delaware, I am taking or have taken a number of
-                        higher-level computer science courses ranging from a variety of fields including Data Structures, Algorithms, Software Engineering, Automata Theory, and Machine Organization.
-                    </p>
-                    
-                    <p style="color: white; font-size:larger">Aside from school, some of my hobbies include playing basketball, weightlifting, 
-                        and playing video games. I also play VALORANT for the University of Delaware.</p>
-                </div>
-
-                <div class="skills" id="skills">
-                    <h2 style="font-family: Arial;margin-left: 40px; margin-top: 100px;color: white;">#  Technical Skills</h2>
-
-                    <div class="skill-container">
-
-                        <div class="skill" onclick="toggle('python')">
-                            <img src="./imgs/python-logo.png" class="skill-image">
-                            <div class="skill-desc"></div>
-                        </div>
-
-                        <div class="skill" onclick="toggle('java')">
-                            <img src="./imgs/javalogo.svg" class="skill-image">
-                            <div class="skill-desc"></div>
-                        </div>
-
-                        <div class="skill" onclick="toggle('c')">
-                            <img src="./imgs/C_Logo.png" class="skill-image">
-                            <div class="skill-desc"></div>
-                        </div>
-
-                        <div class="skill" onclick="toggle('cpp')">
-                            <img src="./imgs/c++.png" class="skill-image">
-                            <div class="skill-desc"></div>
-                        </div>
-
-                        <div class="skill" onclick="toggle('html')">
-                            <img src="./imgs/html5.png" class="skill-image">
-                            <div class="skill-desc"></div>
-                        </div>
-
-                        <div class="skill" onclick="toggle('css')">
-                            <img src="./imgs/css.png" class="skill-image">
-                            <div class="skill-desc"></div>
-                        </div>
-
-                        <div class="skill" onclick="toggle('javascript')">
-                            <img src="./imgs/JavaScript-logo.png" class="skill-image">
-                            <div class="skill-desc"></div>
-                        </div>
-                        
-                    </div>
-                </div>
-
-                <div class="project-container" id="projects">
-                    <h2 style="font-family: Arial;margin-left: 40px; margin-top: 100px;color: white;"># Personal Projects</h2>
-                    
-                    <div class="project-card">
-                        <div class="project-name">
-                            <h1>Effortless</h1>
-                            <a style="margin-left: 66%"href="https://doomsuccs.github.io/Team-1/"><img class="icon" src="./imgs/external.png"></a>
-                            <a href="https://github.com/Doomsuccs/Team-1"><img class="icon"src="./imgs/github.png"></a>
-                        </div>
-
-
-                        <div class="project-description">
-                            A collaborative project amongst myself and four others that involved creating a mock E-commerce website in React
-                            and TypeScript. I handled the majority of the front-end development and much of the data handling.
-                        </div>
-
-                        <div class="language-footer">
-                            <div class="language-tag">HTML</div>
-                            <div class="language-tag">CSS</div>
-                            <div class="language-tag">React</div>
-                        </div>
-
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-name">
-                            <h1>Etch A Sketch</h1>
-                            <a style="margin-left: 58%"href="https://thekevinchau.github.io/etch-a-sketch/"><img class="icon" src="./imgs/external.png"></a>
-                            <a href="https://github.com/thekevinchau/etch-a-sketch"><img class="icon"src="./imgs/github.png"></a>
-                        </div>
-
-                        <div class="project-description">
-                            As part of an online curriculum I've been following, I was tasked with creating an Etch-A-Sketch
-                            replica that allows you to draw on a canvas. I created this using HTML, CSS, and JavaScript. This project
-                            was used primarily to practice DOM Manipulation.
-                        </div>
-
-                        <div class="language-footer">
-                            <div class="language-tag">HTML</div>
-                            <div class="language-tag">CSS</div>
-                            <div class="language-tag">JavaScript</div>
-                        </div>
-
-                    </div>
-
-                    <div class="project-card">
-                        <div class="project-name">
-                            <h1>Personal Website</h1>
-                            <a style="margin-left: 50%"href="https://thekevinchau.github.io/personal-web/"><img class="icon" src="./imgs/external.png"></a>
-                            <a href="https://github.com/thekevinchau/personal-web"><img class="icon"src="./imgs/github.png"></a>
-                        </div>
-
-                        <div class="project-description">
-                            You're looking at it right now! This is my first personal project that I've used all the HTML, CSS, and JavaScript that I've learned so far!
-                            This is my first project regarding building a web-application. Eventually I will rebuild this app using DOM Manipulation and/or React.
-                        </div>
-
-                        <div class="language-footer">
-                            <div class="language-tag">HTML</div>
-                            <div class="language-tag">CSS</div>
-                            <div class="language-tag">JavaScript</div>
-                        </div>
-                    </div>
-
-
-                </div>
-
-                <div class="contact-me">
-                    <h2 style="font-family: Arial;margin-left: 40px; margin-top: 100px;color: white;"># Contact Me (UNDER CONSTRUCTION)</h2>
-                    <form>
-                        <input type="text" id="contact-name" placeholder="Enter Your Name" required>
-                        <input type="text" id="contact-email" placeholder="Enter Your Email" required>
-                        <textarea id="contact-message" rows="4" placeholder="Enter Your Message"></textarea>
-                        <button type="submit">Send</button>
-                    </form>
-                </div>
-
+        <div class="home-section">
+          <div class="home-data">
+            <h1>
+              Hey there, I'm
+              <span style="color: rgb(72, 200, 72)">Kevin Chau.</span>
+            </h1>
+            <div class="arrow">
+              <a href="#about"></a>
+              <a href="#about"></a>
+              <a href="#about"></a>
             </div>
+          </div>
         </div>
-    </body>
-    <div class="popup" id="python-pop">
-        <div class="button-row"><div class="exit-button" onclick="toggle('python')">x</div></div>
-        <h1 class="popup-header" style="color:rgb(72, 200, 72)">Python</h1>
-        <div class="popup-description">Python... my first ever programming language. I learned the basics of this language
-            through my first ever Computer Science course at the University of Delaware. Most recently
-             I took a course on Algorithms where we used the simple syntax of Python to solve complex algorithmic problems.
-             My plan forward with Python is to eventually learn Pandas, Numpy, Tkinter, and Matplotlib.
+        <div class="about-me" id="about">
+          <h2
+            style="
+              font-family: Arial;
+              margin-left: 40px;
+              margin-top: 150px;
+              color: white;
+            "
+          >
+            # About Me
+          </h2>
+          <p style="color: white; font-size: larger">
+            My name is Kevin Chau and I’m a student currently studying Computer
+            Science and Cybersecurity at the University of Delaware. Whether
+            it's programming, game dev, or web design — if it requires a
+            computer and some creative thinking I’m interested!
+          </p>
+          <p style="color: white; font-size: larger">
+            I have a deep passion for programming and I like solving problems. I
+            first started learning Python in my first semester of college. Today
+            I’m studying web development and cybersecurity, which allows me to
+            think about the integrated approach to the conception and
+            development of secure software design.
+          </p>
+
+          <p style="color: white; font-size: larger">
+            At the University of Delaware, I am taking or have taken a number of
+            higher-level computer science courses ranging from a variety of
+            fields including Data Structures, Algorithms, Software Engineering,
+            Automata Theory, and Machine Organization.
+          </p>
+
+          <p style="color: white; font-size: larger">
+            Aside from school, some of my hobbies include playing basketball,
+            weightlifting, and playing video games. I also play VALORANT for the
+            University of Delaware.
+          </p>
         </div>
-    </div>
 
-    <div class="popup" id="java-pop">
-        <div class="button-row"><div class="exit-button" onclick="toggle('java')">x</div></div>
-        <h1 class="popup-header" style="color: orange;">Java</h1>
-        <div class="popup-description">Java is the programming language I learned immediately after Python. I learned the basics of
-            this language through another introductory Computer Science course at the University of Delaware. Through this course,
-            I learned the fundamentals and foundations of object-oriented-programming; a rather helpful skillset. While Java is a nice language to know,
-            my experience with it has been rather... interesting. Basically, I'm not a fan of the lengthy syntax!
+        <div class="skills" id="skills">
+          <h2
+            style="
+              font-family: Arial;
+              margin-left: 40px;
+              margin-top: 100px;
+              color: white;
+            "
+          >
+            # Technical Skills
+          </h2>
+
+          <div class="skill-container">
+            <div class="skill" onclick="toggle('python')">
+              <img src="./imgs/python-logo.png" class="skill-image" />
+              <div class="skill-desc"></div>
+            </div>
+
+            <div class="skill" onclick="toggle('java')">
+              <img src="./imgs/javalogo.svg" class="skill-image" />
+              <div class="skill-desc"></div>
+            </div>
+
+            <div class="skill" onclick="toggle('c')">
+              <img src="./imgs/C_Logo.png" class="skill-image" />
+              <div class="skill-desc"></div>
+            </div>
+
+            <div class="skill" onclick="toggle('cpp')">
+              <img src="./imgs/c++.png" class="skill-image" />
+              <div class="skill-desc"></div>
+            </div>
+
+            <div class="skill" onclick="toggle('html')">
+              <img src="./imgs/html5.png" class="skill-image" />
+              <div class="skill-desc"></div>
+            </div>
+
+            <div class="skill" onclick="toggle('css')">
+              <img src="./imgs/css.png" class="skill-image" />
+              <div class="skill-desc"></div>
+            </div>
+
+            <div class="skill" onclick="toggle('javascript')">
+              <img src="./imgs/JavaScript-logo.png" class="skill-image" />
+              <div class="skill-desc"></div>
+            </div>
+          </div>
         </div>
-    </div>
 
-    <div class="popup" id="c-pop">
-        <div class="button-row"><div class="exit-button" onclick="toggle('c')">x</div></div>
-        <h1 class="popup-header" style="color:rgb(46, 46, 238)">C</h1>
-        <div class="popup-description">I learned C through a Systems Programming course here at my university. This was my first ever
-            experience with a low-level language and through the Systems Programming course I took, I was able to understand the importance
-            of low-level programming, as it makes you think more logically. During the Spring 2024 semester, 
-            I will be garnering more experience with C in a Parallel Programming course as well as an Operating Systems course.
+        <div class="project-container" id="projects">
+          <h2
+            style="
+              font-family: Arial;
+              margin-left: 40px;
+              margin-top: 100px;
+              color: white;
+            "
+          >
+            # Personal Projects
+          </h2>
+
+          <div class="project-card">
+            <div class="project-name">
+              <h1>Effortless</h1>
+              <a
+                style="margin-left: 66%"
+                href="https://doomsuccs.github.io/Team-1/"
+                ><img class="icon" src="./imgs/external.png"
+              /></a>
+              <a href="https://github.com/Doomsuccs/Team-1"
+                ><img class="icon" src="./imgs/github.png"
+              /></a>
+            </div>
+
+            <div class="project-description">
+              A collaborative project amongst myself and four others that
+              involved creating a mock E-commerce website in React and
+              TypeScript. I handled the majority of the front-end development
+              and much of the data handling.
+            </div>
+
+            <div class="language-footer">
+              <div class="language-tag">HTML</div>
+              <div class="language-tag">CSS</div>
+              <div class="language-tag">React</div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-name">
+              <h1>Etch A Sketch</h1>
+              <a
+                style="margin-left: 58%"
+                href="https://thekevinchau.github.io/etch-a-sketch/"
+                ><img class="icon" src="./imgs/external.png"
+              /></a>
+              <a href="https://github.com/thekevinchau/etch-a-sketch"
+                ><img class="icon" src="./imgs/github.png"
+              /></a>
+            </div>
+
+            <div class="project-description">
+              As part of an online curriculum I've been following, I was tasked
+              with creating an Etch-A-Sketch replica that allows you to draw on
+              a canvas. I created this using HTML, CSS, and JavaScript. This
+              project was used primarily to practice DOM Manipulation.
+            </div>
+
+            <div class="language-footer">
+              <div class="language-tag">HTML</div>
+              <div class="language-tag">CSS</div>
+              <div class="language-tag">JavaScript</div>
+            </div>
+          </div>
+
+          <div class="project-card">
+            <div class="project-name">
+              <h1>Personal Website</h1>
+              <a
+                style="margin-left: 50%"
+                href="https://thekevinchau.github.io/personal-web/"
+                ><img class="icon" src="./imgs/external.png"
+              /></a>
+              <a href="https://github.com/thekevinchau/personal-web"
+                ><img class="icon" src="./imgs/github.png"
+              /></a>
+            </div>
+
+            <div class="project-description">
+              You're looking at it right now! This is my first personal project
+              that I've used all the HTML, CSS, and JavaScript that I've learned
+              so far! This is my first project regarding building a
+              web-application. Eventually I will rebuild this app using DOM
+              Manipulation and/or React.
+            </div>
+
+            <div class="language-footer">
+              <div class="language-tag">HTML</div>
+              <div class="language-tag">CSS</div>
+              <div class="language-tag">JavaScript</div>
+            </div>
+          </div>
         </div>
-    </div>
-
-    <div class="popup" id="cpp-pop">
-        <div class="button-row"><div class="exit-button" onclick="toggle('cpp')">x</div></div>
-        <h1 class="popup-header" style="color: purple;">C++</h1>
-        <div class="popup-description">This was a language that I picked up in the fall of 2022 for a Data Structures course. C++ taught me the concept and importance of dynamic memory allocation, considering
-            it is a "fast" language and memory management is important. I've not
-            used C++ much since then unfortunately. However, I do plan on learning game development in the near future so I'm sure that
-        C++ will come in handy!  </div>
-    </div>
-
-    <div class="popup" id="html-pop">
-        <div class="button-row"><div class="exit-button" onclick="toggle('html')">x</div></div>
-        <h1 class="popup-header" style="color: orangered">HTML</h1>
-        <div class="popup-description">Prior to making this website, I had limited experience with HTML, mainly because
-            my university's curriculum focused on functional programming topics as opposed to application development. So here I am now,
-            learning HTML so that I can make more web applications!
+        <h2
+        style="
+          font-family: Arial;
+          margin-left: 40px;
+          margin-top: 100px;
+          color: white;
+        "
+      >
+        # Contact Me
+      </h2>
+          <div class="contact-me">
+            <input
+              type="text"
+              id="contact-name"
+              placeholder="Enter Your Name"
+              required
+            />
+            <input
+              type="text"
+              id="contact-email"
+              placeholder="Enter Your Email"
+              required
+            />
+            <textarea
+              id="contact-message"
+              rows="4"
+              placeholder="Enter Your Message"
+            ></textarea>
+            <button id = "email-button" onclick="SendMail()" type="submit">Send</button>
+          </div>
         </div>
+      </div>
     </div>
+  </body>
+  <div class="popup" id="python-pop">
+    <div class="button-row">
+      <div class="exit-button" onclick="toggle('python')">x</div>
+    </div>
+    <h1 class="popup-header" style="color: rgb(72, 200, 72)">Python</h1>
+    <div class="popup-description">
+      Python... my first ever programming language. I learned the basics of this
+      language through my first ever Computer Science course at the University
+      of Delaware. Most recently I took a course on Algorithms where we used the
+      simple syntax of Python to solve complex algorithmic problems. My plan
+      forward with Python is to eventually learn Pandas, Numpy, Tkinter, and
+      Matplotlib.
+    </div>
+  </div>
 
-    <div class="popup" id="css-pop">
-        <div class="button-row"><div class="exit-button" onclick="toggle('css')">x</div></div>
-        <h1 class="popup-header" style="color: rgb(0, 64, 255)">CSS</h1>
-        <div class="popup-description">Like HTML, I have limited knowledge of CSS due to my lack of experience in web development.
-            Although I am not the most creative or artistic person, I do enjoy using CSS primarily due to its effectiveness in making things look
-        elegant! I aim to continue learning more styling elements! Eventually I aim to pick up Tailwind CSS. </div>
+  <div class="popup" id="java-pop">
+    <div class="button-row">
+      <div class="exit-button" onclick="toggle('java')">x</div>
     </div>
+    <h1 class="popup-header" style="color: orange">Java</h1>
+    <div class="popup-description">
+      Java is the programming language I learned immediately after Python. I
+      learned the basics of this language through another introductory Computer
+      Science course at the University of Delaware. Through this course, I
+      learned the fundamentals and foundations of object-oriented-programming; a
+      rather helpful skillset. While Java is a nice language to know, my
+      experience with it has been rather... interesting. Basically, I'm not a
+      fan of the lengthy syntax!
+    </div>
+  </div>
 
-    <div class="popup" id="js-pop">
-        <div class="button-row"><div class="exit-button" onclick="toggle('javascript')">x</div></div>
-        <h1 class="popup-header" style="color: yellow;">JavaScript</h1>
-        <div class="popup-description">As I continue to learn web development, I began to learn JavaScript to complement 
-            both HTML and CSS so that I am able to build web applications. Currently I am focused on learning the front-end
-        side with JavaScript but eventually I will learn how to manipulate the backend through Node.js and Express.js! Another goal of mine 
-    is to learn React and Next.js! </div>
+  <div class="popup" id="c-pop">
+    <div class="button-row">
+      <div class="exit-button" onclick="toggle('c')">x</div>
     </div>
+    <h1 class="popup-header" style="color: rgb(46, 46, 238)">C</h1>
+    <div class="popup-description">
+      I learned C through a Systems Programming course here at my university.
+      This was my first ever experience with a low-level language and through
+      the Systems Programming course I took, I was able to understand the
+      importance of low-level programming, as it makes you think more logically.
+      During the Spring 2024 semester, I will be garnering more experience with
+      C in a Parallel Programming course as well as an Operating Systems course.
+    </div>
+  </div>
+
+  <div class="popup" id="cpp-pop">
+    <div class="button-row">
+      <div class="exit-button" onclick="toggle('cpp')">x</div>
+    </div>
+    <h1 class="popup-header" style="color: purple">C++</h1>
+    <div class="popup-description">
+      This was a language that I picked up in the fall of 2022 for a Data
+      Structures course. C++ taught me the concept and importance of dynamic
+      memory allocation, considering it is a "fast" language and memory
+      management is important. I've not used C++ much since then unfortunately.
+      However, I do plan on learning game development in the near future so I'm
+      sure that C++ will come in handy!
+    </div>
+  </div>
+
+  <div class="popup" id="html-pop">
+    <div class="button-row">
+      <div class="exit-button" onclick="toggle('html')">x</div>
+    </div>
+    <h1 class="popup-header" style="color: orangered">HTML</h1>
+    <div class="popup-description">
+      Prior to making this website, I had limited experience with HTML, mainly
+      because my university's curriculum focused on functional programming
+      topics as opposed to application development. So here I am now, learning
+      HTML so that I can make more web applications!
+    </div>
+  </div>
+
+  <div class="popup" id="css-pop">
+    <div class="button-row">
+      <div class="exit-button" onclick="toggle('css')">x</div>
+    </div>
+    <h1 class="popup-header" style="color: rgb(0, 64, 255)">CSS</h1>
+    <div class="popup-description">
+      Like HTML, I have limited knowledge of CSS due to my lack of experience in
+      web development. Although I am not the most creative or artistic person, I
+      do enjoy using CSS primarily due to its effectiveness in making things
+      look elegant! I aim to continue learning more styling elements! Eventually
+      I aim to pick up Tailwind CSS.
+    </div>
+  </div>
+
+  <div class="popup" id="js-pop">
+    <div class="button-row">
+      <div class="exit-button" onclick="toggle('javascript')">x</div>
+    </div>
+    <h1 class="popup-header" style="color: yellow">JavaScript</h1>
+    <div class="popup-description">
+      As I continue to learn web development, I began to learn JavaScript to
+      complement both HTML and CSS so that I am able to build web applications.
+      Currently I am focused on learning the front-end side with JavaScript but
+      eventually I will learn how to manipulate the backend through Node.js and
+      Express.js! Another goal of mine is to learn React and Next.js!
+    </div>
+  </div>
 </html>

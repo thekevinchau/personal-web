@@ -75,18 +75,31 @@ p{
     animation-delay: -.4s;
 }
 
-form{
+.contact-me{
     display: flex;
     flex-direction: column;
     max-width: 500px;
     margin-left: 40px;
-    visibility: hidden;
 }
-form input{
-    border-radius: 10px;
+
+input,textarea{
+    border: 0;
+    margin: 8px 0;
+    padding: 15px;
+    outline: none;
+    border-radius: 15px;
+    font-size: 16px;
 }
-form textarea{
-    border-radius: 10px;
+#email-button{
+    margin: 8px 0;
+    border-radius: 15px;
+    padding: 12px;
+    font-size: 18px;
+    border: 0;
+    cursor: pointer;
+    width: 150px;
+    background-color: rgb(42, 148, 42);
+    color: white;
 }
 
 @keyframes scroll{
